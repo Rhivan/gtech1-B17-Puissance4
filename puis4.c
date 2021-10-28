@@ -75,7 +75,7 @@ void init(void){
 
 int main(void){
 
-  int column = 7;
+  int column = 8;
   int row = 5;
   int columnFilled[7] = {0,0,0,0,0,0,0};
   init();
@@ -88,7 +88,7 @@ int main(void){
       player++;
     }
     affiche();
-    while ((column < 1 || column > 7 ) || column == 7 || columnFilled[column-1] == 1){
+    while ((column < 1 || column > 7 ) || column == 8 || columnFilled[column-1] == 1){
       if(columnFilled[column-1] == 1){
 	printf("Column full try another one !\n");
       }
@@ -106,7 +106,7 @@ int main(void){
 	}
       }
     }
-    column = 7;
+    column = 8;
     end++;
     testvertical();
     testdiagonal1();
